@@ -1,0 +1,30 @@
+.show-all {
+  justify-content: center;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.show-all__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  .font-oswald-regular();
+  position: relative;
+  padding-top: 60px;
+
+  &::before {
+    background: url("../img/icon-plus-mobile.svg") no-repeat;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 85px;
+  }
+}
+
+.show-all__button {
+  background-color: #f2f2f2;
+  color: @text-color;
+  width: 280px;
+}
