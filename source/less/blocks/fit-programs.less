@@ -4,3 +4,18 @@
   padding: 0 20px 0 20px;
   margin-top: 20px;
 }
+
+@media (min-width: @tablet-px) {
+  .fit-programs {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .fit-programs {
+    flex-direction: row;
+    flex-grow: 0;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+}

@@ -7,3 +7,33 @@
   line-height: 18px;
   color: @text-color;
 }
+
+@media (min-width: @tablet-px) {
+  .body {
+    box-sizing: border-box;
+    width: @tablet-px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .bg-wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .body {
+    width: 1440px;
+    padding: 0;
+  }
+
+  .bg-wrapper {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+  }
+
+  .page-main {
+    width: @pc-px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}

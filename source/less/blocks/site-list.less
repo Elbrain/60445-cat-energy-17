@@ -1,7 +1,4 @@
 .site-list__item {
-  .font-oswald-medium();
-  font-size: 20px;
-  line-height: 20px;
   text-align: center;
   padding: 19px 0 20px;
   border-top: 1px solid #e6e6e6;
@@ -9,6 +6,36 @@
 
 .site-list__link {
   text-decoration: none;
-  color: @oswald-color;
   text-transform: uppercase;
+  color: @oswald-color;
+  .font-oswald-medium();
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-px) {
+  .site-list__item {
+    border-top: none;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+
+  .site-list__item--active-black {
+    border-bottom: solid 2px @button-bg;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .site-list__link {
+    color: white;
+  }
+
+  .site-list__item--active {
+    border-bottom: solid 2px white;
+  }
+
+  .site-list__link--black {
+    color: @oswald-color;
+  }
 }

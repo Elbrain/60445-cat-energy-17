@@ -1,0 +1,122 @@
+.additional-catalog__header {
+  .font-oswald-regular();
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 1.5px);
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background: @button-bg;
+  }
+}
+
+.additional-catalog__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.additional-catalog__item {
+  border-top: 1px solid #cdcdcd;
+  margin-top: 15px;
+}
+
+.additional-catalog__item-header {
+  .font-oswald-regular();
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional-catalog__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-catalog__button {
+  margin-top: 10px;
+}
+
+@media (min-width: @tablet-px) {
+  .additional-catalog__list {
+    padding: 0 30px;
+  }
+
+  .additional-catalog__item {
+    border: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .additional-catalog__header {
+    padding-left: 60px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      width: 330px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% + 1.5px);
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: @button-bg;
+    }
+  }
+
+  .additional-catalog__item-header {
+    padding-left: 40px;
+  }
+
+  .additional-catalog__quantity {
+    padding-right: 50px;
+  }
+
+  .additional-catalog__info {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .additional-catalog__button {
+    width: calc(100% - 80px);
+    margin: auto;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .additional-catalog__header {
+    &::after {
+      width: 870px;
+    }
+
+    &::before {
+      width: 40px;
+    }
+  }
+
+  .additional-catalog__list {
+
+    width: 895px;
+  }
+
+  .additional-catalog__button {
+    width: 245px;
+  }
+}

@@ -2,3 +2,43 @@
   display: flex;
   flex-direction: column;
 }
+
+.page-header__logo--tablet,
+.page-header__logo--pc {
+  display: none;
+}
+
+@media (min-width: @tablet-px) {
+  .page-header {
+    padding: 15px 0 0;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo--tablet {
+    display: block;
+  }
+
+  .page-header__logo--mobile,
+  .page-header__logo--pc {
+    display: none;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .page-header {
+    width: @pc-px;
+    padding: 50px 40px 0;
+    box-sizing: border-box;
+  }
+
+  .page-header__logo--pc {
+    display: block;
+  }
+
+  .page-header__logo--mobile,
+  .page-header__logo--tablet {
+    display: none;
+  }
+}
