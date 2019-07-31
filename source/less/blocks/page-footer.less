@@ -1,6 +1,38 @@
+.page-footer__contacts-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 20px;
+}
+
+.page-footer__contacts-wrapper--gray {
+  background-color: @block-bg;
+}
+
+.page-footer__invite {
+  width: 125px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 20px;
+  .font-oswald-regular();
+  text-transform: uppercase;
+}
+
+.page-footer__adress {
+  font-size: 14px;
+  line-height: 20px;
+  width: 135px;
+  padding-right: 20px;
+}
+
 .page-footer__links {
   display: flex;
   flex-direction: column;
+}
+
+.page-footer__map {
+  margin-bottom: 30px;
 }
 
 .page-footer__logo-text {
@@ -26,4 +58,88 @@
   text-decoration: none;
   color: @text-color;
   font-size: 16px;
+}
+
+.page-footer__map--tablet,
+.page-footer__map--pc {
+  display: none;
+}
+
+@media (min-width: @tablet-px) {
+  .page-footer__invite {
+    width: 200px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 70px;
+  }
+
+  .page-footer__adress {
+    width: 155px;
+    text-align: right;
+    padding-right: 70px;
+  }
+
+  .page-footer__adress span {
+    padding-top: 20px;
+    display: block;
+  }
+
+  .page-footer__map {
+    margin: 0;
+  }
+
+  .page-footer__map--tablet {
+    display: block;
+  }
+
+  .page-footer__map--mobile,
+  .page-footer__map--pc {
+    display: none;
+  }
+
+  .page-footer__links {
+    background-color: @block-bg;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+  }
+
+  .page-footer__logo-text {
+    width: 130px;
+    height: 30px;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .page-footer__map--pc {
+    display: block;
+    width: 100%;
+  }
+
+  .page-footer__map--mobile,
+  .page-footer__map--tablet {
+    display: none;
+  }
+
+  .page-footer__links {
+    justify-content: space-around;
+  }
+
+  .page-footer__map {
+    margin: 0;
+  }
 }

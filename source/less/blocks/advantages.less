@@ -1,5 +1,5 @@
 .advantages {
-  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -63,4 +63,137 @@
 
 .advantages__description {
   margin: 5px 0;
+}
+
+@media (min-width: @tablet-px) {
+  .advantages {
+    padding: 0 30px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: calc(50% - 20px);
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    &--nutrition::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
+
+    &--nutrition::after {
+      content: "1";
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+      right: 100px;
+      .font-oswald-regular();
+      color: @block-bg;
+    }
+
+    &--powder::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
+
+    &--powder::after {
+      content: "2";
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+      right: 100px;
+      .font-oswald-regular();
+      color: @block-bg;
+    }
+
+    &--meals::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
+
+    &--meals::after {
+      content: "3";
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+      right: 100px;
+      .font-oswald-regular();
+      color: @block-bg;
+    }
+
+    &--weight::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
+
+    &--weight::after {
+      content: "4";
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+      right: 100px;
+      .font-oswald-regular();
+      color: @block-bg;
+    }
+  }
+
+  .advantages__description {
+    width: 215px;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .advantages__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .advantages {
+    padding: 0 40px;
+  }
+
+  .advantages__item {
+    width: 225px;
+
+    &--nutrition::after {
+      right: 0;
+    }
+
+    &--powder::after {
+      right: 0;
+    }
+
+    &--meals::after {
+      right: 0;
+    }
+
+    &--weight::after {
+      right: 0;
+    }
+  }
 }
