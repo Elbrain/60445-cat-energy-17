@@ -6,9 +6,133 @@
   padding: 20px;
 }
 
+.fit-program__title {
+  position: relative;
+  .font-oswald-regular();
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 9px 0 16px;
+  padding-left: 11px;
+
+  &--gain-weight {
+    padding-left: 36px;
+  }
+}
+
+.fit-program__title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: @button-bg;
+  position: absolute;
+  top: -6px;
+  left: 2px;
+}
+
+.fit-program__title--loose-weight::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon-cat-slim.svg") no-repeat 50% 50%;
+  position: absolute;
+  top: -8px;
+  left: 2px;
+}
+
+.fit-program__title--gain-weight::after {
+  content: "";
+  width: 68px;
+  height: 30px;
+  background: url("../img/icon-cat-pro.svg") no-repeat 50% 50%;
+  position: absolute;
+  top: 3px;
+  left: -8px;
+}
+
+.fit-program__description {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.fit-program__link-to {
+  .font-oswald-regular();
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.fit-program__link-to::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat 50% 50%;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 6px);
+}
+
 @media (min-width: @tablet-px) {
   .fit-program {
-    padding: 70px 50px;
+    padding: 75px 52px 60px;
+    margin-bottom: 30px;
+  }
+
+  .fit-program__title {
+    text-align: left;
+    font-size: 36px;
+    line-height: 37px;
+    margin: 0 0 9px;
+    padding: 0;
+  }
+
+  .fit-program__title::before {
+    width: 200px;
+    height: 200px;
+    top: 46%;
+    left: calc(100% - 211px);
+  }
+
+  .fit-program__title--loose-weight::after {
+    width: 142px;
+    height: 195px;
+    top: 10%;
+    left: calc(100% - 181px);
+  }
+
+  .fit-program__title--gain-weight::after {
+    width: 268px;
+    height: 113px;
+    top: calc(100% + 22px);
+    left: calc(100% - 244px);
+  }
+
+  .fit-program__description {
+    border-bottom: none;
+    line-height: 24px;
+    padding: 0;
+    margin-bottom: 52px;
+    width: 375px;
+    letter-spacing: 0.01px;
+
+    &--smaller {
+      width: 341px;
+    }
+  }
+
+  .fit-program__link-to {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      left: 132px;
+    }
   }
 }
 
@@ -16,5 +140,43 @@
   .fit-program {
     width: 570px;
     box-sizing: border-box;
+  }
+
+  .fit-program__title {
+    font-size: 36px;
+    line-height: 37px;
+    text-align: center;
+    margin: 2px 0 56px;
+    padding-left: 21px;
+  }
+
+  .fit-program__title--gain-weight {
+    padding-left: 63px;
+  }
+
+  .fit-program__description {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .fit-program__title::before {
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    left: 0;
+  }
+
+  .fit-program__title--loose-weight::after {
+    width: 71px;
+    height: 100px;
+    top: -37px;
+    left: 14px;
+  }
+
+  .fit-program__title--gain-weight::after {
+    width: 136px;
+    height: 60px;
+    top: -10px;
+    left: -19px;
   }
 }

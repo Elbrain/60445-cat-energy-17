@@ -8,6 +8,20 @@
   color: @text-color;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media (min-width: @tablet-px) {
   .body {
     box-sizing: border-box;
@@ -15,14 +29,11 @@
     font-size: 16px;
     line-height: 20px;
   }
-
-  .bg-wrapper {
-    padding: 0 30px;
-  }
 }
 
 @media (min-width: @pc-px) {
-  .body {
+  .body,
+  .wide-bg-wrapper {
     width: 100%;
     padding: 0;
   }
@@ -35,9 +46,17 @@
     padding: 0;
   }
 
-  .page-main {
-    width: @pc-px;
+  .wide-bg-wrapper {
+    background-color: @block-bg;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    box-sizing: border-box;
+  }
+
+  .page-main--wrapper {
+    width: 100%;
+    min-width: 1300px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

@@ -6,7 +6,8 @@
 .advantages__heading {
   .font-oswald-regular();
   font-size: 36px;
-  font-weight: 60px;
+  line-height: 60px;
+  margin-top: -3px;
 }
 
 .advantages__list {
@@ -18,7 +19,7 @@
 
 .advantages__item {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   &--nutrition::before {
     background: @button-bg url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
@@ -62,27 +63,41 @@
 }
 
 .advantages__description {
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 @media (min-width: @tablet-px) {
   .advantages {
+    margin-top: 14px;
     padding: 0 30px;
   }
 
+  .advantages__heading {
+    font-size: 60px;
+    margin: 0;
+  }
+
   .advantages__list {
+    margin-top: 72px;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .advantages__item {
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
     padding: 80px 0;
     display: flex;
     flex-direction: column;
     z-index: 1;
+    margin-bottom: 50px;
+
+    &--meals,
+    &--weight {
+      margin-bottom: 0;
+    }
 
     &--nutrition::before {
       width: 80px;
@@ -97,10 +112,11 @@
       line-height: 281px;
       position: absolute;
       z-index: -1;
-      bottom: 10px;
-      right: 100px;
+      bottom: -25px;
+      right: 95px;
       .font-oswald-regular();
       color: @block-bg;
+      margin-bottom: 50px;
     }
 
     &--powder::before {
@@ -116,8 +132,8 @@
       line-height: 281px;
       position: absolute;
       z-index: -1;
-      bottom: 10px;
-      right: 100px;
+      bottom: 24px;
+      right: 78px;
       .font-oswald-regular();
       color: @block-bg;
     }
@@ -135,8 +151,8 @@
       line-height: 281px;
       position: absolute;
       z-index: -1;
-      bottom: 10px;
-      right: 100px;
+      bottom: 26px;
+      right: 77px;
       .font-oswald-regular();
       color: @block-bg;
     }
@@ -154,16 +170,17 @@
       line-height: 281px;
       position: absolute;
       z-index: -1;
-      bottom: 10px;
-      right: 100px;
+      bottom: 26px;
+      right: 75px;
       .font-oswald-regular();
       color: @block-bg;
     }
   }
 
   .advantages__description {
-    width: 215px;
-    margin-top: 35px;
+    width: 245px;
+    margin-top: 33px;
+    line-height: 24px;
   }
 }
 
@@ -174,26 +191,35 @@
   }
 
   .advantages {
+    width: @pc-px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding: 0 40px;
+    margin-top: 42px;
   }
 
   .advantages__item {
-    width: 225px;
+    width: 245px;
+    padding-bottom: 0;
 
     &--nutrition::after {
-      right: 0;
+      bottom: -104px;
+      right: 14px;
     }
 
     &--powder::after {
+      bottom: -55px;
       right: 0;
     }
 
     &--meals::after {
-      right: 0;
+      bottom: -6px;
+      right: -2px;
     }
 
     &--weight::after {
-      right: 0;
+      bottom: -4px;
+      right: -5px;
     }
   }
 }

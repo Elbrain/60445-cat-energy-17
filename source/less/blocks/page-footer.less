@@ -1,9 +1,12 @@
+.page-footer {
+  width: @mobile-px;
+}
+
 .page-footer__contacts-wrapper {
-  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0 20px;
+  padding: 13px 0 20px;
 }
 
 .page-footer__contacts-wrapper--gray {
@@ -23,34 +26,35 @@
   font-size: 14px;
   line-height: 20px;
   width: 135px;
-  padding-right: 20px;
+  padding-right: 24px;
+  margin-top: 16px;
 }
 
 .page-footer__links {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .page-footer__map {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .page-footer__logo-text {
   width: 130px;
   height: 26px;
-  margin: auto;
+  margin: auto auto 15px;
 }
 
 .page-footer__social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding: 25px 0;
+  padding: 22px 0 21px;
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 15px;
 }
 
@@ -58,6 +62,7 @@
   text-decoration: none;
   color: @text-color;
   font-size: 16px;
+  margin-top: 13px;
 }
 
 .page-footer__map--tablet,
@@ -65,7 +70,17 @@
   display: none;
 }
 
+.page-footer__academy-logo svg {
+  width: 28px;
+  height: 35px;
+}
+
 @media (min-width: @tablet-px) {
+  .page-footer {
+    margin-top: 32px;
+    width: @tablet-px;
+  }
+
   .page-footer__invite {
     width: 200px;
     font-size: 20px;
@@ -77,6 +92,9 @@
     width: 155px;
     text-align: right;
     padding-right: 70px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 18px 0;
   }
 
   .page-footer__adress span {
@@ -85,7 +103,7 @@
   }
 
   .page-footer__map {
-    margin: 0;
+    margin: 17px 0 0;
   }
 
   .page-footer__map--tablet {
@@ -101,9 +119,9 @@
     background-color: @block-bg;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 40px 30px;
+    padding: 55px 35px 55px 32px;
+    justify-content: space-between;
   }
 
   .page-footer__logo-text {
@@ -116,6 +134,7 @@
     border: none;
     margin: 0;
     padding: 0;
+    align-items: center;
   }
 
   .page-footer__copyright {
@@ -125,6 +144,17 @@
 }
 
 @media (min-width: @pc-px) {
+  .page-footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page-footer__adress {
+    text-align: left;
+    padding-right: 90px;
+  }
+
   .page-footer__map--pc {
     display: block;
     width: 100%;
@@ -136,7 +166,21 @@
   }
 
   .page-footer__links {
-    justify-content: space-around;
+    padding: 55px 110px 55px 110px;
+    justify-content: space-between;
+  }
+
+  .page-footer__contacts {
+    position: relative;
+  }
+
+  .page-footer__contacts-wrapper {
+    position: absolute;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    background: white;
+    padding: 44px 0 42px 4px;
   }
 
   .page-footer__map {

@@ -8,9 +8,11 @@
   <body class="body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class=" page-header__logo--mobile" src="img/logo-mobile.svg" width="200" height="40" alt="Логотип Cat Engergy" />
-        <img class="page-header__logo--tablet" src="img/logo-tablet.svg" width="175" height="60" alt="Логотип Cat Engergy" />
-        <img class="page-header__logo--pc" src="img/logo-desktop.svg" width="200" height="60" alt="Логотип Cat Engergy" />
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="200" height="40" alt="Логотип Cat Engergy">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Показать меню/скрыть меню</button>
@@ -27,8 +29,21 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-
+    <main class="page-main page-main--wrapper">
+      <section class="t-program">
+        <h2 class="personal-program__heading">Подбор программы</h2>
+        <p class="personal-program__description">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <!-- <form action="#" method="post" enctype="multipart/form-data" class="standart-form">
+					<label for="name">Имя*</label>
+						<input type="text" name="name" id="name" required>
+					<label for="mail">Вес(кг)*</label>
+						<input type="email" name="mail" id="mail" required>
+          <label for="name">Возраст (лет)</label>
+            <input type="text" name="name" id="name" required>
+        </form> -->
+      </section>
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts">
