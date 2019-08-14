@@ -35,12 +35,12 @@
   </header>
   <main class="page-main page-main--wrapper">
     <section class="personal-program">
-      <h2 class="personal-program__heading">Подбор программы</h2>
+      <h1 class="personal-program__heading">Подбор программы</h1>
       <p class="personal-program__description">
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
-      <form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" class="standart-form">
-        <div class="personal-program__data">
+      <form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" class="program">
+        <div class="program__data">
           <label for="name">Имя*</label>
           <input type="text" name="name" id="name" value="Барсик" required />
           <label for="weight">Вес(кг)*</label>
@@ -48,7 +48,7 @@
           <label for="age">Возраст (лет)</label>
           <input type="text" name="age" id="age" value="7" required />
         </div>
-        <div class="personal-program__goal">
+        <div class="program__goal">
           <input type="radio" value="Похудение" name="goal" id="goal-weight" checked />
           <label for="goal-weight">Похудение</label>
           <input type="radio" value="Набор массы" name="goal" id="goal-mass" />
@@ -56,19 +56,19 @@
           <input type="radio" value="Не знаю" name="goal" id="goal-dk" />
           <label for="goal-dk">Не знаю(Нужен ваш совет)</label>
         </div>
-        <div class="personal-program__contant">
-          <h3>Контактные данные (владельца кота)</h3>
+        <div class="program__contact">
+          <h2 class="program__heading">Контактные данные (владельца кота)</h2>
           <label for="mail">E-mail*</label>
           <input type="email" name="mail" id="mail" value="kuklachev@gmail.com" required />
           <label for="phone">Телефон*</label>
           <input type="text" name="phone" id="phone" value="8 (960) 900-60-90" required />
         </div>
-        <div class="personal-program--comment">
-          <h3>Комментарий</h3>
+        <div class="program__comment">
+          <h2 class="program__heading">Комментарий</h2>
           <textarea name="bio">Расскажите обо всех повадках кота</textarea>
         </div>
         <div class="personal-program__additional">
-          <h3>Дополнительно</h3>
+          <h2 class="program__heading">Дополнительно</h2>
           <input type="checkbox" name="sugar" value="Сахарозаменитель" id="add1" />
           <label for="add1">Сахарозаменитель</label>
           <input type="checkbox" name="water" value="Питьевая вода" id="add2" />
@@ -79,7 +79,7 @@
           <label for="add4">Витамины</label>
         </div>
         <input type="submit" value="Отправить заявку" class="button">
-        <p class="personal-program__notice">* -- Обязательные полня</p>
+        <p class="program__notice">* -- Обязательные полня</p>
       </form>
     </section>
   </main>
