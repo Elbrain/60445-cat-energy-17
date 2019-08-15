@@ -8,7 +8,7 @@
   line-height: 20px;
   color: white;
   text-align: center;
-  padding: 190px 60px 40px 60px;
+  padding: 209px 62px 62px 62px;
   position: relative;
 
   &::before {
@@ -26,18 +26,41 @@
 @media (min-width: @tablet-px) {
   .offer {
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 50% 50%;
+    margin: 23px auto 62px;
     padding: 0;
     background-size: contain;
+    width: 710px;
+
+    &::before {
+      top: 38%;
+      right: 79%;
+    }
+  }
+
+  .offer__text {
+    width: 170px;
+    text-align: left;
+    padding: 119px 42px 113px 424px;
+  }
+
+  .offer__text::before {
+    top: 110px;
+    left: 90px;
   }
 }
 
 @media (min-width: @pc-px) {
+  .offer__text {
+    text-align: center;
+    padding: 200px 34px 48px 43px;
+  }
+
   .offer {
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat 50% 50%;
     width: 245px;
     position: absolute;
-    right: 5%;
-    top: 25%;
+    right: 110px;
+    top: 90px;
     margin: 0;
     padding: 0;
   }

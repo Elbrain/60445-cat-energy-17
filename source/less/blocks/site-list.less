@@ -1,6 +1,6 @@
 .site-list__item {
   text-align: center;
-  padding: 19px 0 20px;
+  padding: 21px 0 21px;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -11,29 +11,49 @@
   .font-oswald-medium();
   font-size: 20px;
   line-height: 20px;
+  letter-spacing: 0.6px;
+}
+
+@media (max-width: @mobile-px-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-px) {
   .site-list__item {
     border-top: none;
+    padding-bottom: 10px;
+  }
+
+  .site-list__link {
+    .font-oswald-regular();
     font-size: 18px;
     line-height: 25px;
-    padding-bottom: 10px;
+    letter-spacing: 0.1px;
   }
 
   .site-list__item--active-black {
     border-bottom: solid 2px @button-bg;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: @pc-px) {
   .site-list__link {
     color: white;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .site-list__item {
+    padding: 21px 0 8px;
   }
 
   .site-list__item--active {
     border-bottom: solid 2px white;
   }
+
 
   .site-list__link--black {
     color: @oswald-color;

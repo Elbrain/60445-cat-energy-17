@@ -9,14 +9,14 @@
 
   &--vk {
     background: url("../img/icon-vk.svg") no-repeat 50% 50%;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 21px;
     font-size: 0;
   }
 
   &--ig {
     background: url("../img/icon-insta.svg") no-repeat 50% 50%;
-    width: 20px;
+    width: 17px;
     height: 20px;
     margin: 0 35px;
     font-size: 0;
@@ -27,5 +27,24 @@
     width: 20px;
     height: 20px;
     font-size: 0;
+  }
+}
+
+@media (min-width: @tablet-px) {
+  .social__link {
+    &--vk {
+      width: 32px;
+      height: 17px;
+    }
+
+    &--ig {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--fb {
+      width: 15px;
+      height: 29px;
+    }
   }
 }

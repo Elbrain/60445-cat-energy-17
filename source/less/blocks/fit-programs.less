@@ -2,21 +2,25 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 20px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 @media (min-width: @tablet-px) {
   .fit-programs {
     padding: 0 30px;
+    margin-top: 49px;
   }
 }
 
 @media (min-width: @pc-px) {
   .fit-programs {
+    width: @pc-px;
+    margin: 0 auto;
+    box-sizing: border-box;
     flex-direction: row;
     flex-grow: 0;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 11px;
     padding: 0 40px;
   }
 }
