@@ -37,7 +37,15 @@
 }
 
 .page-footer__map {
+  min-height: 400px;
   margin-bottom: 24px;
+  background: url("../img/bg-map-mobile@1x.png") 50%;
+  background-size: 320px auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .page-footer__logo-text {
@@ -63,11 +71,6 @@
   color: @text-color;
   font-size: 16px;
   margin-top: 13px;
-}
-
-.page-footer__map--tablet,
-.page-footer__map--pc {
-  display: none;
 }
 
 .page-footer__academy-logo svg {
@@ -104,15 +107,13 @@
 
   .page-footer__map {
     margin: 17px 0 0;
-  }
+    background: url("../img/bg-map-tablet@1x.png") 50%;
+    background-size: 767px auto;
 
-  .page-footer__map--tablet {
-    display: block;
-  }
-
-  .page-footer__map--mobile,
-  .page-footer__map--pc {
-    display: none;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-map-tablet@2x.png");
+      background-size: 767px auto;
+    }
   }
 
   .page-footer__links {
@@ -155,15 +156,6 @@
     padding-right: 90px;
   }
 
-  .page-footer__map--pc {
-    display: block;
-    width: 100%;
-  }
-
-  .page-footer__map--mobile,
-  .page-footer__map--tablet {
-    display: none;
-  }
 
   .page-footer__links {
     padding: 55px 110px 55px 110px;
@@ -185,5 +177,12 @@
 
   .page-footer__map {
     margin: 0;
+    background: url("../img/bg-map-desktop@1x.png") 50%;
+    background-size: 1440px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px auto;
+    }
   }
 }
