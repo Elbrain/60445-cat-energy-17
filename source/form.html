@@ -5,7 +5,6 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
   <title>Cat Energy</title>
-
 </head>
 
 <body class="body">
@@ -41,36 +40,38 @@
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
       <form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" class="program">
-        <div class="program-data">
-          <div class="program-data__wrapper">
-            <label class="program-data__container" for="name">Имя:*
-              <input type="text" name="name" id="name" value="Барсик" required />
-            </label>
-            <label class="program-data__container" for="weight">Вес(кг):*
-              <input type="text" name="weight" id="weight" value="7" required />
-            </label>
-            <label class="program-data__container" for="age">Возраст (лет):
-              <input type="text" name="age" id="age" value="7" required />
-            </label>
+        <div class="program__data-wrapper">
+          <div class="program-data">
+            <div class="program-data__wrapper">
+              <label class="program-data__container" for="name">Имя:*
+                <input type="text" name="name" id="name" value="Барсик" required />
+              </label>
+              <label class="program-data__container" for="weight">Вес(кг):*
+                <input type="text" name="weight" id="weight" value="7" required />
+              </label>
+              <label class="program-data__container" for="age">Возраст (лет):
+                <input type="text" name="age" id="age" value="7" required />
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="program-goal">
-          <div class="program-goal__wrapper">
-            <label class="program-goal__container" for="goal-weight">
-              <input class="" type="radio" value="Похудение" name="goal" id="goal-weight" checked />
-              Похудение
-              <span class="program-goal__checkmark"></span>
-            </label>
-            <label class="program-goal__container" for="goal-mass">
-              <input type="radio" value="Набор массы" name="goal" id="goal-mass" />
-              Набор массы
-              <span class="program-goal__checkmark"></span>
-            </label>
-            <label class="program-goal__container" for="goal-dk">
-              <input type="radio" value="Не знаю" name="goal" id="goal-dk" />
-              Не знаю (Нужен ваш совет)
-              <span class="program-goal__checkmark"></span>
-            </label>
+          <div class="program-goal">
+            <div class="program-goal__wrapper">
+              <label class="program-goal__container" for="goal-weight">
+                <input class="" type="radio" value="Похудение" name="goal" id="goal-weight" checked />
+                Похудение
+                <span class="program-goal__checkmark"></span>
+              </label>
+              <label class="program-goal__container" for="goal-mass">
+                <input type="radio" value="Набор массы" name="goal" id="goal-mass" />
+                Набор массы
+                <span class="program-goal__checkmark"></span>
+              </label>
+              <label class="program-goal__container" for="goal-dk">
+                <input type="radio" value="Не знаю" name="goal" id="goal-dk" />
+                Не знаю (Нужен ваш совет)
+                <span class="program-goal__checkmark"></span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="program-contact">
@@ -136,7 +137,7 @@
   </main>
   <footer class="page-footer">
     <section class="page-footer__contacts">
-      <div class="page-footer__contacts-wrapper">
+      <div class="page-footer__contacts-wrapper page-footer__contacts-wrapper--grey">
         <p class="page-footer__invite">
           Приглашаем<br /> к сотрудничеству дилеров!
         </p>

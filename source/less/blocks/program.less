@@ -12,7 +12,7 @@
   text-align: center;
   text-transform: initial;
   font-size: 14px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
 }
 
 
@@ -27,8 +27,18 @@
   .program__button {
     width: 285px;
   }
+}
 
-  .program__notice {
+@media (min-width: @pc-px) {
+  .program__data {
+    width: 570px;
+  }
 
+  .program__data-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 40px;
   }
 }

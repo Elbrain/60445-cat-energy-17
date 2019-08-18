@@ -25,9 +25,10 @@
     width: @tablet-px;
   }
 
-  .personal-program__heading{
+  .personal-program__heading {
     font-size: 60px;
     line-height: 60px;
+    padding: 0 30px;
   }
 
   .personal-program__description {
@@ -35,5 +36,19 @@
     line-height: 30px;
     padding-left: 70px;
     width: 340px;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .personal-program {
+    width: @pc-px;
+  }
+
+  .personal-program__heading {
+    padding: 0 40px;
+  }
+
+  .personal-program__description {
+    padding: 0 40px;
   }
 }
