@@ -5,6 +5,7 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
   <title>Cat Energy</title>
+
 </head>
 
 <body class="body">
@@ -27,8 +28,8 @@
         <li class="site-list__item">
           <a class="site-list__link site-list__link--black" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item site-list__item--active-black">
-          <a class="site-list__link site-list__link--black">Подбор программы</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--black site-link__item--active-black">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -40,46 +41,96 @@
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
       <form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" class="program">
-        <div class="program__data">
-          <label for="name">Имя*</label>
-          <input type="text" name="name" id="name" value="Барсик" required />
-          <label for="weight">Вес(кг)*</label>
-          <input type="text" name="weight" id="weight" value="7" required />
-          <label for="age">Возраст (лет)</label>
-          <input type="text" name="age" id="age" value="7" required />
+        <div class="program-data">
+          <div class="program-data__wrapper">
+            <label class="program-data__container" for="name">Имя:*
+              <input type="text" name="name" id="name" value="Барсик" required />
+            </label>
+            <label class="program-data__container" for="weight">Вес(кг):*
+              <input type="text" name="weight" id="weight" value="7" required />
+            </label>
+            <label class="program-data__container" for="age">Возраст (лет):
+              <input type="text" name="age" id="age" value="7" required />
+            </label>
+          </div>
         </div>
-        <div class="program__goal">
-          <input type="radio" value="Похудение" name="goal" id="goal-weight" checked />
-          <label for="goal-weight">Похудение</label>
-          <input type="radio" value="Набор массы" name="goal" id="goal-mass" />
-          <label for="goal-mass">Набор массы</label>
-          <input type="radio" value="Не знаю" name="goal" id="goal-dk" />
-          <label for="goal-dk">Не знаю(Нужен ваш совет)</label>
+        <div class="program-goal">
+          <div class="program-goal__wrapper">
+            <label class="program-goal__container" for="goal-weight">
+              <input class="" type="radio" value="Похудение" name="goal" id="goal-weight" checked />
+              Похудение
+              <span class="program-goal__checkmark"></span>
+            </label>
+            <label class="program-goal__container" for="goal-mass">
+              <input type="radio" value="Набор массы" name="goal" id="goal-mass" />
+              Набор массы
+              <span class="program-goal__checkmark"></span>
+            </label>
+            <label class="program-goal__container" for="goal-dk">
+              <input type="radio" value="Не знаю" name="goal" id="goal-dk" />
+              Не знаю (Нужен ваш совет)
+              <span class="program-goal__checkmark"></span>
+            </label>
+          </div>
         </div>
-        <div class="program__contact">
-          <h2 class="program__heading">Контактные данные (владельца кота)</h2>
-          <label for="mail">E-mail*</label>
-          <input type="email" name="mail" id="mail" value="kuklachev@gmail.com" required />
-          <label for="phone">Телефон*</label>
-          <input type="text" name="phone" id="phone" value="8 (960) 900-60-90" required />
+        <div class="program-contact">
+          <div class="program-contact__heading form-heading">
+            <h2 class="form-heading__header">Контактные данные (владельца кота)</h2>
+            <div class="form-heading__line">
+            </div>
+          </div>
+          <div class="program-contact__wrapper">
+            <label class="program-contact__container" for="mail">E-mail*
+              <input type="email" name="mail" id="mail" value="kuklachev@gmail.com" required />
+            </label>
+            <label class="program-contact__container" for="phone">Телефон*
+              <input type="text" name="phone" id="phone" value="8 (960) 900-60-90" required />
+            </label>
+          </div>
         </div>
-        <div class="program__comment">
-          <h2 class="program__heading">Комментарий</h2>
-          <textarea name="bio">Расскажите обо всех повадках кота</textarea>
+        <div class="program-comment">
+          <div class="program-comment__heading form-heading">
+            <h2 class="form-heading__header">Комментарий</h2>
+            <div class="form-heading__line">
+            </div>
+          </div>
+          <div class="program-comment__wrapper">
+            <textarea name="bio" class="program-comment__bio" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
+          </div>
         </div>
-        <div class="personal-program__additional">
-          <h2 class="program__heading">Дополнительно</h2>
-          <input type="checkbox" name="sugar" value="Сахарозаменитель" id="add1" />
-          <label for="add1">Сахарозаменитель</label>
-          <input type="checkbox" name="water" value="Питьевая вода" id="add2" />
-          <label for="add2">Питьевая вода</label>
-          <input type="checkbox" name="milk" value="Молоко" id="add3" />
-          <label for="add3">Молоко</label>
-          <input type="checkbox" name="vitamins" value="Витамины" id="add4" />
-          <label for="add4">Витамины</label>
+        <div class="program-additional">
+          <div class="program-additional__heading form-heading">
+            <h2 class="form-heading__header">Дополнительно</h2>
+            <div class="form-heading__line">
+            </div>
+          </div>
+          <div class="program-additional__wrapper">
+            <label class="program-additional__container" for="add1">
+              Сахарозаменитель
+              <input type="checkbox" name="sugar" value="Сахарозаменитель" id="add1" checked />
+              <span class="program-additional__checkmark"></span>
+            </label>
+            <label class="program-additional__container" for="add2">
+              Питьевая вода
+              <input type="checkbox" name="water" value="Питьевая вода" id="add2" />
+              <span class="program-additional__checkmark"></span>
+            </label>
+            <label class="program-additional__container" for="add3">
+              Молоко
+              <input type="checkbox" name="milk" value="Молоко" id="add3" />
+              <span class="program-additional__checkmark"></span>
+            </label>
+            <label class="program-additional__container" for="add4">
+              Витамины
+              <input type="checkbox" name="vitamins" value="Витамины" id="add4" />
+              <span class="program-additional__checkmark"></span>
+            </label>
+          </div>
         </div>
-        <input type="submit" value="Отправить заявку" class="button">
-        <p class="program__notice">* -- Обязательные полня</p>
+        <div class="program__wrapper">
+          <input type="submit" value="Отправить заявку" class="button program__button">
+          <p class="program__notice">* &mdash; Обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>

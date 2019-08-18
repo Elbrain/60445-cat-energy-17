@@ -1,0 +1,70 @@
+.program-additional__wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.program-additional__container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.program-additional__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.program-additional__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+.program-additional__container input:checked ~ .program-additional__checkmark::after {
+  display: block;
+}
+
+.program-additional__container .program-additional__checkmark::after {
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 14px;
+  border: solid @button-bg;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+@media (min-width: @tablet-px) {
+  .program-additional__wrapper {
+    padding: 0 165px 0 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+
+  .program-additional__container {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 60px;
+    width: 130px;
+  }
+}

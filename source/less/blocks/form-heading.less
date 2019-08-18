@@ -1,0 +1,42 @@
+.form-heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-heading__header {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: initial;
+  margin-top: 14px;
+  padding: 0 15px 0 20px;
+}
+
+.form-heading__line {
+  height: 3px;
+  background: #68b738;
+  width: 100%;
+}
+
+@media (min-width: @tablet-px) {
+  .form-heading__header {
+    padding: 0 40px 0 70px;
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+    &::before{
+      position: absolute;
+      content: "";
+      height: 3px;
+      background: #68b738;
+      width: 30px;
+      left: 0;
+      top: 19px;
+    }
+    .form-heading__line {
+
+    }
+  }
+
+}

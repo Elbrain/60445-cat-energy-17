@@ -1,20 +1,39 @@
 .personal-program {
   width: @mobile-px;
   margin: 0 auto;
-  padding: 0 20px;
   .font-oswald-regular();
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .personal-program__heading {
   font-size: 36px;
   line-height: 60px;
   text-transform: none;
+  padding: 0 20px;
 }
 
 .personal-program__description {
   font-size: 14px;
   line-height: 18px;
-  padding-right: 55px;
   margin-bottom: 40px;
+  padding: 0 55px 0 20px;
+}
+
+@media (min-width: @tablet-px) {
+  .personal-program {
+    width: @tablet-px;
+  }
+
+  .personal-program__heading{
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .personal-program__description {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 70px;
+    width: 340px;
+  }
 }

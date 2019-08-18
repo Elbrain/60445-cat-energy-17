@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 13px 0 20px;
+  padding: 13px 0 10px;
 }
 
 .page-footer__contacts-wrapper--gray {
@@ -37,7 +37,7 @@
 }
 
 .page-footer__map {
-  min-height: 400px;
+  height: 363px;
   margin-bottom: 24px;
   background: url("../img/bg-map-mobile@1x.png") 50%;
   background-size: 320px auto;
@@ -50,8 +50,7 @@
 
 .page-footer__logo-text {
   width: 130px;
-  height: 26px;
-  margin: auto auto 15px;
+  margin: 10px auto 16px;
 }
 
 .page-footer__social {
@@ -70,12 +69,15 @@
   text-decoration: none;
   color: @text-color;
   font-size: 16px;
-  margin-top: 13px;
+  margin-top: 16px;
 }
 
 .page-footer__academy-logo svg {
-  width: 28px;
-  height: 35px;
+  fill: #666666;
+}
+
+.page-footer__academy-logo {
+   margin-right: -6px;
 }
 
 @media (min-width: @tablet-px) {
@@ -106,7 +108,8 @@
   }
 
   .page-footer__map {
-    margin: 17px 0 0;
+    height: 395px;
+    margin: 26px 0 0;
     background: url("../img/bg-map-tablet@1x.png") 50%;
     background-size: 767px auto;
 
@@ -142,6 +145,14 @@
     padding: 0;
     margin: 0;
   }
+
+  .page-footer__academy-link {
+    margin: 14px 14px 0 0;
+  }
+
+  .page-footer__academy-logo {
+    margin-right: -10px;
+  }
 }
 
 @media (min-width: @pc-px) {
@@ -158,12 +169,20 @@
 
 
   .page-footer__links {
-    padding: 55px 110px 55px 110px;
+    padding: 50px 110px 50px 110px;
     justify-content: space-between;
   }
 
   .page-footer__contacts {
     position: relative;
+  }
+
+  .page-footer__academy-link {
+    margin: 14px 16px 0 0;
+  }
+
+  .page-footer__academy-logo {
+    margin-right: -7px;
   }
 
   .page-footer__contacts-wrapper {
@@ -173,9 +192,11 @@
     left: 110px;
     background: white;
     padding: 44px 0 42px 4px;
+    z-index: 1;
   }
 
   .page-footer__map {
+    height: 400px;
     margin: 0;
     background: url("../img/bg-map-desktop@1x.png") 50%;
     background-size: 1440px auto;

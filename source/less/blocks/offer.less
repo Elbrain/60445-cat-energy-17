@@ -13,8 +13,9 @@
   line-height: 20px;
   color: white;
   text-align: center;
-  padding: 209px 62px 62px 62px;
+  padding: 211px 58px 64px 58px;
   position: relative;
+  margin-bottom: 11px;
 
   &::before {
     content: "";
@@ -23,7 +24,7 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 25%;
+    top: 88px;
     right: calc(50% - 30px);
   }
 }
@@ -45,7 +46,7 @@
   .offer__text {
     width: 170px;
     text-align: left;
-    padding: 119px 42px 113px 424px;
+    padding: 116px 42px 113px 424px;
   }
 
   .offer__text::before {
@@ -62,7 +63,12 @@
 @media (min-width: @pc-px) {
   .offer__text {
     text-align: center;
-    padding: 200px 34px 48px 43px;
+    padding: 197px 34px 60px 38px;
+
+    &::before {
+      top: 76px;
+      left: 92px;
+    }
   }
 
   .offer {
