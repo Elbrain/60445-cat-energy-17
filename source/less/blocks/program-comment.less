@@ -4,18 +4,33 @@
 }
 
 .program-comment__bio {
-  margin: 25px 0 20px;
-  padding: 15px 15px;
+  margin: 16px 0;
+  padding: 13px 13px;
   resize: none;
   overflow: auto;
   border: 1px solid #e6e6e6;
   width: 100%;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 @media (min-width: @tablet-px) {
   .program-comment__wrapper {
-    padding: 0 70px 0 65px;
+    padding: 0 70px;
+    margin: 31px 0 29px;
+  }
+
+  .program-comment__bio {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 18px 18px;
+  }
+}
+
+@media (min-width: @pc-px) {
+  .program-comment__wrapper {
+    padding: 0 110px;
+    margin-bottom: 32px;
   }
 }
