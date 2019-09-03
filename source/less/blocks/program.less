@@ -4,8 +4,9 @@
 
 .program__button {
   width: 100%;
-  outline: none;
   border: none;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .program__notice {
@@ -13,6 +14,12 @@
   text-transform: initial;
   font-size: 14px;
   font-family: "Arial", sans-serif;
+  margin: 22px 0;
+}
+
+.program__data-wrapper {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 
@@ -21,11 +28,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 165px 0 65px;
+    padding: 0 174px 0 64px;
+    margin-bottom: 99px;
   }
 
   .program__button {
+    font-size: 20px;
     width: 285px;
+    margin-left: 5px;
+    height: 52px;
+    margin-top: 6px;
+  }
+
+  .program__notice {
+    font-size: 16px;
   }
 }
 
@@ -39,6 +55,17 @@
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 110px;
+  }
+
+  .program__button {
+    width: 565px;
+    margin-right: 81px;
+  }
+
+  .program__wrapper {
+    padding: 0 110px;
+    margin-bottom: 77px;
+    justify-content: unset;
   }
 }

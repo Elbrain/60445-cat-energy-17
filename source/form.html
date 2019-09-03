@@ -2,8 +2,13 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <title>Cat Energy</title>
 </head>
 
@@ -11,7 +16,7 @@
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -44,32 +49,32 @@
           <div class="program-data">
             <div class="program-data__wrapper">
               <label class="program-data__container" for="name">Имя:*
-                <input type="text" name="name" id="name" value="Барсик" required />
+                <input type="text" name="name" id="name" placeholder="Барсик" required="">
               </label>
-              <label class="program-data__container" for="weight">Вес(кг):*
-                <input type="text" name="weight" id="weight" value="7" required />
+              <label class="program-data__container" for="weight">Вес (кг):*
+                <input type="text" name="weight" id="weight" placeholder="7" required="">
               </label>
               <label class="program-data__container" for="age">Возраст (лет):
-                <input type="text" name="age" id="age" value="7" required />
+                <input type="text" name="age" id="age" placeholder="7" required="">
               </label>
             </div>
           </div>
           <div class="program-goal">
             <div class="program-goal__wrapper">
               <label class="program-goal__container" for="goal-weight">
-                <input class="" type="radio" value="Похудение" name="goal" id="goal-weight" checked />
+                <input class="" type="radio" value="Похудение" name="goal" id="goal-weight" checked="">
                 Похудение
-                <span class="program-goal__checkmark"></span>
+                <span class="program-goal__checkmark" tabindex="0"></span>
               </label>
               <label class="program-goal__container" for="goal-mass">
-                <input type="radio" value="Набор массы" name="goal" id="goal-mass" />
+                <input type="radio" value="Набор массы" name="goal" id="goal-mass">
                 Набор массы
-                <span class="program-goal__checkmark"></span>
+                <span class="program-goal__checkmark" tabindex="0"></span>
               </label>
               <label class="program-goal__container" for="goal-dk">
-                <input type="radio" value="Не знаю" name="goal" id="goal-dk" />
+                <input type="radio" value="Не знаю" name="goal" id="goal-dk">
                 Не знаю (Нужен ваш совет)
-                <span class="program-goal__checkmark"></span>
+                <span class="program-goal__checkmark" tabindex="0"></span>
               </label>
             </div>
           </div>
@@ -81,11 +86,11 @@
             </div>
           </div>
           <div class="program-contact__wrapper">
-            <label class="program-contact__container" for="mail">E-mail*
-              <input type="email" name="mail" id="mail" value="kuklachev@gmail.com" required />
+            <label class="program-contact__container" for="mail">E-mail:*
+              <input type="email" name="mail" id="mail" placeholder="kuklachev@gmail.com" required="">
             </label>
-            <label class="program-contact__container" for="phone">Телефон*
-              <input type="text" name="phone" id="phone" value="8 (960) 900-60-90" required />
+            <label class="program-contact__container" for="phone">Телефон:*
+              <input type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90" required="">
             </label>
           </div>
         </div>
@@ -96,7 +101,7 @@
             </div>
           </div>
           <div class="program-comment__wrapper">
-            <textarea name="bio" class="program-comment__bio" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
+            <textarea name="bio" class="program-comment__bio" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
           </div>
         </div>
         <div class="program-additional">
@@ -108,28 +113,28 @@
           <div class="program-additional__wrapper">
             <label class="program-additional__container" for="add1">
               Сахарозаменитель
-              <input type="checkbox" name="sugar" value="Сахарозаменитель" id="add1" checked />
-              <span class="program-additional__checkmark"></span>
+              <input type="checkbox" name="sugar" value="Сахарозаменитель" id="add1" checked="">
+              <span class="program-additional__checkmark" tabindex="0"></span>
             </label>
             <label class="program-additional__container" for="add2">
               Питьевая вода
-              <input type="checkbox" name="water" value="Питьевая вода" id="add2" />
-              <span class="program-additional__checkmark"></span>
+              <input type="checkbox" name="water" value="Питьевая вода" id="add2">
+              <span class="program-additional__checkmark" tabindex="0"></span>
             </label>
             <label class="program-additional__container" for="add3">
               Молоко
-              <input type="checkbox" name="milk" value="Молоко" id="add3" />
-              <span class="program-additional__checkmark"></span>
+              <input type="checkbox" name="milk" value="Молоко" id="add3">
+              <span class="program-additional__checkmark" tabindex="0"></span>
             </label>
             <label class="program-additional__container" for="add4">
               Витамины
-              <input type="checkbox" name="vitamins" value="Витамины" id="add4" />
-              <span class="program-additional__checkmark"></span>
+              <input type="checkbox" name="vitamins" value="Витамины" id="add4">
+              <span class="program-additional__checkmark" tabindex="0"></span>
             </label>
           </div>
         </div>
         <div class="program__wrapper">
-          <input type="submit" value="Отправить заявку" class="button program__button">
+          <input type="submit" value="Отправить заявку" class="button program__button" tabindex="0">
           <p class="program__notice">* &mdash; Обязательные поля</p>
         </div>
       </form>
@@ -139,7 +144,7 @@
     <section class="page-footer__contacts">
       <div class="page-footer__contacts-wrapper page-footer__contacts-wrapper--grey">
         <p class="page-footer__invite">
-          Приглашаем<br /> к сотрудничеству дилеров!
+          Приглашаем<br> к сотрудничеству дилеров!
         </p>
         <p class="page-footer__adress">
           ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
@@ -149,7 +154,7 @@
       </div>
     </section>
     <section class="page-footer__links">
-      <img class="page-footer__logo-text" src="img/logo-footer.svg" width="130" height="26" alt="Cat Engergy" />
+      <img class="page-footer__logo-text" src="img/logo-footer.svg" width="130" height="26" alt="Cat Engergy">
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vk" href="#" target="_blank" title="Вконтакте">vk</a>
@@ -165,8 +170,7 @@
         <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
         <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewBox="0 0 60 60">
-            <path fill="#2E368F"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
           </svg>
         </a>
       </section>
@@ -174,7 +178,7 @@
   </footer>
   <script src="/js/menu.js"></script>
   <script src="/js/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhB5NeS3j_VtlPw1hW9-Yx8Dxc47mmJGU&callback=initMap">
+  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhB5NeS3j_VtlPw1hW9-Yx8Dxc47mmJGU&callback=initMap">
   </script>
   <script src="/js/picturefill.js"></script>
 </body>

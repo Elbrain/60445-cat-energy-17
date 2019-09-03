@@ -8,8 +8,8 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: initial;
-  margin-top: 14px;
-  padding: 0 15px 0 20px;
+  margin-top: 11px;
+  padding: 0 21px 0 20px;
 }
 
 .form-heading__line {
@@ -33,7 +33,21 @@
       background: #68b738;
       width: 30px;
       left: 0;
-      top: 19px;
+      top: 21px;
+    }
+  }
+}
+
+@media (min-width: @pc-px) {
+  .form-heading__header {
+    padding: 0 40px 0 110px;
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+
+    &::before {
+      width: 70px;
     }
   }
 }
