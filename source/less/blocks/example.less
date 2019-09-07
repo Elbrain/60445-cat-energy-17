@@ -15,7 +15,7 @@
 }
 
 .example__heading {
-  margin: 17px 0 12px;
+  margin: 17px 0 11px;
   .font-oswald-regular();
   font-size: 36px;
   line-height: 60px;
@@ -29,7 +29,7 @@
 .example__plate-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .example__plate {
@@ -127,6 +127,60 @@ input[type="checkbox"] {
     background-color: white;
     padding: 0;
     border-top: 1px solid #e6e6e6;
+    position: relative;
+  }
+
+  .example img {
+    position: absolute;
+    left: 5%;
+    bottom: 111px;
+    width: 690px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .example__toggle {
+    width: 433px;
+    height: 6px;
+    margin: auto 19px;
+    background: #dcdcdc;
+    position: relative;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .example__slider-control {
+    position: absolute;
+    bottom: 71px;
+    margin: 0 auto;
+    left: 92px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__bar {
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -15px;
+    left: 46%;
+    cursor: pointer;
+    background: white;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    border: 1px solid #cdcdcd;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: 13px;
+      left: 13px;
+      background: #68b738;
+      border-radius: 50px;
+    }
   }
 
   .example__wrapper {
@@ -147,6 +201,19 @@ input[type="checkbox"] {
     margin-bottom: 53px;
     letter-spacing: 0;
   }
+
+  // .example__slide picture {
+  //   width: 100%;
+  //   min-width: 100%;
+  //   max-width: 100%;
+  // }
+  //
+  // .example__slide img {
+  //   width: 100%;
+  //   max-width: 100%;
+  //   height: auto;
+  //   max-height: 100%;
+  // }
 
   .example__plate {
     margin-right: 42px;
@@ -194,6 +261,17 @@ input[type="checkbox"] {
     flex-direction: row;
     background-color: @block-bg;
     padding-bottom: 30px;
+  }
+
+  .example img {
+    left: 46%;
+    bottom: 132px;
+  }
+
+  .example__slider-control {
+    bottom: 74px;
+    right: 40px;
+    left: unset;
   }
 
   .example__wrapper {
