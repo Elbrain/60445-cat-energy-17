@@ -21,6 +21,10 @@
   user-select: none;
 }
 
+.program-goal__container:active {
+  opacity: 0.5;
+}
+
 .program-goal__container input {
   position: absolute;
   opacity: 0;
@@ -37,6 +41,10 @@
   border: 1px solid #cecece;
   box-sizing: border-box;
   border-radius: 50%;
+}
+
+.program-goal__checkmark:hover {
+  border: 1px solid #bfbfbf;
 }
 
 .program-goal__container input:checked ~ .program-goal__checkmark::after {
@@ -96,7 +104,7 @@
   }
 
   .program-goal {
-    width: 570px;
+    flex-grow: 1;
     margin-top: 0;
     padding: 0;
   }
